@@ -1,0 +1,10 @@
+.home {
+    width: 80%;
+    margin: 200px auto;
+  }
+  
+  video {
+    display: block; /* 确保是块级元素 */
+    margin: 0 auto; /* 自动水平居中 */
+    max-width: 100%; /* 防止视频超出容器宽度 */
+  }
