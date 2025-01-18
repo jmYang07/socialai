@@ -1,0 +1,11 @@
+elasticsearch:
+  address: "http://10.128.0.2:9200"
+  username: "jiemin"
+  password: "welcome"
+
+gcs:
+  bucket: "socialai-bucket2"
+
+token:
+  secret: "secret"
+
