@@ -1,19 +1,19 @@
-# 📦 Setup and Installation Guide (Detailed)
+# Setup and Installation Guide
 
 This guide walks you through setting up the development environment, installing dependencies, configuring the IB TWS API, and running the Flask web application locally.
 
 ---
 
-## 🧰 1. Development Environment Setup
+## 1. Development Environment Setup
 
-### ✅ Step 1: Extract the Project Files
+### Step 1: Extract the Project Files
 Download and unzip the project:
 ```bash
 unzip flask_app.zip -d flask_app
 cd flask_app
 ```
 
-### ✅ Step 2: (Optional but Recommended) Create a Virtual Environment
+### Step 2: (Optional but Recommended) Create a Virtual Environment
 Using Conda:
 ```bash
 conda create -n flask_ib_demo python=3.11 -y
@@ -28,9 +28,9 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ---
 
-## 📦 2. Install Python Dependencies
+## 2. Install Python Dependencies
 
-### ✅ Step 3: Install All Required Packages
+### Step 3: Install All Required Packages
 If `requirements.txt` is provided:
 ```bash
 pip install -r requirements.txt
@@ -43,29 +43,29 @@ pip install flask flask_sqlalchemy flask_login yfinance pandas plotly ib_insync
 
 ---
 
-## 🔌 3. Configure IB Trader Workstation (TWS)
+## 3. Configure IB Trader Workstation (TWS)
 
-### ✅ Step 4: Download & Launch TWS
+### Step 4: Download & Launch TWS
 Download TWS: https://www.interactivebrokers.com/en/index.php?f=16040  
 Login using a **demo account** (real accounts are not permitted).
 
-### ✅ Step 5: Enable API Access in TWS
+### Step 5: Enable API Access in TWS
 Go to:
 ```
 Edit > Global Configuration > API > Settings
 ```
 Make sure to check:
-- ✅ “Enable ActiveX and Socket Clients”
-- ✅ “Allow connections from localhost only”
+- “Enable ActiveX and Socket Clients”
+- “Allow connections from localhost only”
 - Port: **7497** (default and required)
 
 Keep TWS running while using the app.
 
 ---
 
-## 🗄️ 4. Initialize Database and Fetch Benchmark Data
+## 4. Initialize Database and Fetch Benchmark Data
 
-### ✅ Step 6: Run Initialization Script
+### Step 6: Run Initialization Script
 This script:
 - Creates SQLite database
 - Fetches initial account and benchmark data (e.g., S&P500 via Yahoo Finance)
@@ -85,9 +85,9 @@ Arguments:
 
 ---
 
-## 🚀 5. Run Flask Web Application Locally
+## 5. Run Flask Web Application Locally
 
-### ✅ Step 7: Launch the Web Server
+### Step 7: Launch the Web Server
 ```bash
 python JamieYang0702_flask_backend.py --db_path ./JamieYang0702_ib.db
 ```
@@ -99,7 +99,7 @@ If successful, you'll see:
 
 ---
 
-## 🌐 Step 8: Open in Browser
+## Step 8: Open in Browser
 
 Open your browser and go to:
 ```
@@ -108,6 +108,6 @@ http://127.0.0.1:5000
 
 ---
 
-## ✅ Setup Complete!
+## Setup Complete!
 
 You can now register a new account, log in, and view live IB account data and benchmark comparisons from your local web dashboard.
